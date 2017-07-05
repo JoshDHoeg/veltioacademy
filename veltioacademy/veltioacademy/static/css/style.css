@@ -1,0 +1,213 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+div{
+  display: block;
+  margin: auto;
+}
+
+::-webkit-scrollbar{height: 10px;width: 12px;margin: 1; }
+::-webkit-scrollbar-track{background: #ffffff; }
+::-webkit-scrollbar-thumb{background: #2D009A;}
+
+
+
+
+.email-grab{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #000000;
+}
+.email-grab .intro-wrapper{
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.email-grab .intro-wrapper .intro{
+  display: table-cell;
+  vertical-align: middle;
+}
+.email-grab .intro-header-wrapper{
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+}
+.email-grab #intro-logo-wrapper{
+  padding: 40px 0 50px 0;
+}
+.email-grab #intro-logo-wrapper #intro-logo{
+  width: 800px;
+  display: block;
+  margin: auto;
+}
+.email-grab .intro-button{
+  color: #ffffff;
+  font-size: 28px;
+  cursor: pointer;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  max-width: 250px;
+  margin: auto;
+  padding: 6px;
+  text-align: center;
+  font-family: 'Audiowide', cursive;
+}
+.email-grab .intro-button:active{
+
+}
+.loaded{
+  display: none;
+}
+.flip-style{
+  border-color: #2D009A;
+  background: #ffffff;
+  color: #2D009A;
+  transition: 1s;
+}
+
+
+.flip-container {
+	perspective: 1000000000000000000px;
+}
+
+/*.flip-container:active .flipper, .flip-container.active .flipper {
+	transform: rotateY(180deg);
+  transition: 1s;
+}*/
+/*.flip-container:active .intro-button{
+  border-color: #2D009A;
+  background: #ffffff;
+  color: #2D009A;
+  transition: 1s;
+}*/
+.flip-container, .front, .back {
+	width: 320px;
+	height: 54px;
+}
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+
+}
+.vertical.flip-container {
+	position: relative;
+  transition: 1s;
+}
+.vertical .back {
+	transform: rotateX(180deg);
+}
+
+/*.vertical.flip-container:active .flipper {
+	transform: rotateX(-180deg) translateY(-54px);
+}*/
+.flipped {
+	transform: rotateX(-180deg) translateY(-54px);
+  transition: 1s;
+}
+
+
+.navbar .container-fluid{
+  border-bottom: 5px solid #2D009A;
+  border-radius: none;
+}
+.navbar{
+  margin: 0 !important;
+}
+
+ /*------------------------------------------------------------\
+|                   Default Styles                             |
+\------------------------------------------------------------*/
+.title{
+
+}
+.title h1{
+  font-size: 48px;
+  text-decoration: underline;
+
+}
+.content{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.next{
+  padding: 30px;
+}
+.next img{
+  transform: rotate(90deg);
+  display: block;
+  margin: auto;
+}
+
+
+ /*------------------------------------------------------------\
+|                    Vision Styles                             |
+\------------------------------------------------------------*/
+.vision .video{
+  display: block;
+  margin: auto;
+}
+.vision .content{
+
+}
+
+ /*------------------------------------------------------------\
+|                   Courses Styles                             |
+\------------------------------------------------------------*/
+.courses h2{
+  font-size: 36px;
+}
+.courses ul{
+  list-style-type: none;
+  font-size: 20px;
+}
+.courses .icon{
+  padding: 20px;
+}
+
+ /*------------------------------------------------------------\
+|                     Tools Styles                             |
+\------------------------------------------------------------*/
+.tools{
+
+}
+.tools .icon img{
+  width: 100px;
+}
+
+
+ /*------------------------------------------------------------\
+|                     About Styles                             |
+\------------------------------------------------------------*/
+.about{
+}
+.about img{
+  border-radius:100px;
+  width: 200px;
+}
+
+ /*------------------------------------------------------------\
+|                    Colors Styles                             |
+\------------------------------------------------------------*/
+.bg-blue{
+  background: #2D009A;
+  color: #ffffff !important;
+}
+.bg-white{
+  background: #F2F2F2;
+  color: #2D009A;
+}

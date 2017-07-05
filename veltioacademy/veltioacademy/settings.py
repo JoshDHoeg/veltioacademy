@@ -131,6 +131,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.sites",
     "django.contrib.staticfiles",
+    "bootstrap",
 
     # theme
     "bootstrapform",

@@ -1,77 +1,105 @@
 {% extends "site_base.html" %}
 
 {% load i18n %}
+{% load static %}
 
 {% block head_title %}pinax-project-account{% endblock %}
 
 {% block body_class %}home{% endblock %}
 
 {% block body_base %}
-    <section class="jumbotron">
-        <div class="container">
-            {% include "_messages.html" %}
-            <h1>{% blocktrans %}Welcome to<br>pinax-project-account{% endblocktrans %}</h1>
-            <p>
-                {% blocktrans %}
-                In addition to what is provided by the "zero" project, this project
-                provides thorough integration with django-user-accounts, adding
-                comprehensive account management functionality. It is a foundation
-                suitable for most sites that have user accounts.
-                {% endblocktrans %}
-            </p>
-            {% if not user.is_authenticated %}
-            {% url "account_login" as login_url %}
-            {% url "account_signup" as signup_url %}
-            <p>{% blocktrans %}You can <a href="{{ login_url }}" class="btn btn-default">Log In</a> or <a href="{{ signup_url }}" class="btn btn-primary">Sign Up</a> to try out the site.{% endblocktrans %}</p>
-            {% endif %}
-        </div>
+
+    <section class="vision bg-white" id="vision">
+      <div class="container" id="vision-wrapper">
+        <div class="title"><h1>The Vision</h1></div>
+        <div class="content container"><iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/CiQ874ZuIno" frameborder="0" allowfullscreen></iframe></div>
+        <div class="next"><img src="{% static 'images/ArrowBlue.png' %}" width="64px;"></div>
+      </div>
     </section>
-    <section>
-        <div class="container">
-            <h2 class="text-center">{% blocktrans %}What is Pinax?{% endblocktrans %}</h2>
-            <p class="lead">
-                {% blocktrans %}
-                <b>Pinax</b> is an open-source platform based on Django and
-                intended to provide a starting point for websites. It takes
-                care of the things that many sites have in common, so you can
-                focus on what makes your site different.
-                {% endblocktrans %}
-            </p>
-            <div class="feature-columns">
-                <div>
-                    <i class="fa fa-cubes fa-3x"></i><br>
-                    {% blocktrans %}
-                    <b>Starter projects</b> provide project layout,
-                    scaffolding, already integrated components and
-                    ready-to-go code.
-                    {% endblocktrans %}
-                </div>
-                <div>
-                    <i class="fa fa-puzzle-piece fa-3x"></i><br>
-                    {% blocktrans %}
-                    <b>Reusable apps</b> provide common
-                    infrastructure, back-end functionality,
-                    and user-facing components.
-                    {% endblocktrans %}
-                </div>
-                <div>
-                    <i class="fa fa-tint fa-3x"></i><br>
-                    {% blocktrans %}
-                    <b>Themes</b> provide default templates and
-                    stylesheets for quick prototyping and easy customization.
-                    {% endblocktrans %}
-                </div>
+
+    <section class="courses bg-blue" id="courses">
+      <div class="container" id="courses-wrapper">
+        <div class="title"><h1>The Courses</h1></div>
+        <div class="content container">
+          <div class="col-sm-6 content-a">
+            <!--Basic Web Developement-->
+            <h2>Code</h2>
+            <div class="icon"><img src="{% static 'images/code.png' %}" width="100px;"></div>
+            <div class="text">
+              <ul>
+                <li>Web Developement</li>
+                <li>Javascript</li>
+                <li>SEO</li>
+              </ul>
             </div>
+          </div>
+          <div class="col-sm-6 content-b">
+            <!--Math and Science-->
+            <h2>Math</h2>
+            <div class="icon"><img src="{% static 'images/math.png' %}" width="100px;"></div>
+            <div class="text">
+              <ul>
+                <li>Calculus</li>
+                <li>Algebra</li>
+                <li>Geometry</li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <div class="next"><img src="{% static 'images/ArrowWhite.png' %}" width="64px;"></div>
+      </div>
     </section>
-    <section>
-        <div class="container">
-            <p class="lead text-center">
-                {% blocktrans %}
-                See <a href="http://pinaxproject.com/">pinaxproject.com</a>
-                for more information.
-                {% endblocktrans %}
-            </p>
+
+    <section class="tools bg-white" id="tools">
+      <div class="container" id="tools-wrapper">
+        <div class="title"><h1>The Tools</h1></div>
+        <div class="content container">
+          <div class="col-sm-4 content-1">
+            <div class="icon">
+              <a href="https://hangouts.google.com/" ><img src="{% static 'images/Hangouts.png' %}"></a>
+            </div>
+            <div class="text">
+              <h2>Face To Face</h2>
+              <p>Consultations, and Sessions in an interactive easy to use software</p>
+            </div>
+          </div>
+          <div class="col-sm-4 content-2">
+            <div class="icon">
+              <a href="https://www.google.com/drive/"><img src="{% static 'images/Drive.png' %}"></a>
+            </div>
+            <div class="text">
+              <h2>Shared Documents</h2>
+              <p>Easily share work and discuss solutions with Google Drive</p>
+            </div>
+          </div>
+          <div class="col-sm-4 content-3">
+            <div class="icon">
+              <a href="https://www.google.com/wallet/"><img src="{% static 'images/Wallet.png' %}"></a>
+            </div>
+            <div class="text">
+              <h2>Secure Payments</h2>
+              <p>With Google payments are safe and hassel free</p>
+            </div>
+          </div>
         </div>
+        <div class="next"><img src="{% static 'images/ArrowBlue.png' %}" width="64px;"></div>
+      </div>
+    </section>
+
+    <section class="about bg-blue" id="about">
+      <div class="container about-wrapper">
+        <div class="title"><h1>The Teacher</h1></div>
+        <div class="content container">
+          <div class="image">
+            <img src="{% static 'images/profile.jpg' %}">
+          </div>
+          <div class="text">
+            <h2>Josh Hoeg</h2>
+            <h3>Call Me</h3>
+            <h4>(505) 967 8683</h4>
+            <p>Lorem ipsum dolor sit amet, vulputate nonummy egestas ipsum auctor, massa et mauris commodo per scelerisque, at odio ac, suspendisse vestibulum. Vivamus ligula dui libero quis parturient scelerisque, in commodo nisl, sed ligula erat tempus phasellus, tellus justo commodo non. Amet rhoncus, litora imperdiet vitae etiam porttitor, mi vestibulum hendrerit vel placerat provident imperdiet, vel dolor luctus mauris, elit risus aliquam vel est pellentesque. Dolor non, porta fermentum bibendum egestas vestibulum ac lectus, porttitor dui dapibus eu quisque nulla nulla. Duis auctor sapien ac ligula vestibulum in, dictumst ac eu suscipit at tellus lobortis, sollicitudin aliquam iaculis nulla sed, mauris non. Ut dictum sollicitudin amet, proin elit urna, eros sed, ipsum wisi. Morbi litora condimentum integer eu quo, aliquam morbi arcu ac magna ligula non, suspendisse condimentum in, duis id et quam, ornare id turpis et wisi. Quisque quam integer velit.</p>
+          </div>
+        </div>
+      </div>
     </section>
 {% endblock %}

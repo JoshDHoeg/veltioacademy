@@ -4,7 +4,7 @@
     "url": "https://github.com/pinax/pinax-project"
   },
   "scripts": {
-    "clean": "rm -rf static/dist && mkdir -p static/dist/js && mkdir -p static/dist/css && mkdir -p static/dist/fonts && mkdir -p static/dist/images",
+    "clean": "del -rf static/dist && mkdir -p static/dist/js && mkdir -p static/dist/css && mkdir -p static/dist/fonts && mkdir -p static/dist/images",
     "watch:babel": "babel static/src/js --out-dir static/dist/js --quiet --watch",
     "build:babel": "babel static/src/js --out-dir static/dist/js --quiet",
     "build:js": "browserify -t [ babelify --presets [ es2015 stage-1 ] ] -t envify static/src/js/index.js | uglifyjs -c warnings=false -o static/dist/js/site.js",
