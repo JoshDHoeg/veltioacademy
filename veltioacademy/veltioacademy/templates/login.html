@@ -1,0 +1,29 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+  <head>
+    <meta charset="utf-8" />
+    <title>Veltio Academy</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css ' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css ' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css ' %}">
+
+    <link target="_blank" href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="email-grab" id="email-grab">
+      <div class="intro-wrapper">
+        <div class="intro">
+          <div class="bounceInLeft animated  intro-header-wrapper"><h1 id="welcome">Welcome to the</h1></div>
+          <div class="bounceInRight animated" id="intro-logo-wrapper"><img src="{% static 'images/WhiteTextBlueIconLogo.png' %}" id="intro-logo" alt="veltioacademylogo"></div>
+          <div class="intro-button"><a href="{% url 'account_login' %}">Log In</a></div>
+          <div class="intro-button"><a href="{% url 'account_signup' %}">Sign Up</a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

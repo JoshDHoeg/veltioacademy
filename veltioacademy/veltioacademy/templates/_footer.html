@@ -1,3 +1,14 @@
 {% load i18n %}
+{% load static %}
 
-{% trans "&copy; 2016 &lt;your company here&gt;" %}
+<section class="footer">
+  <div class="container">
+    <div class="socials">
+      <a href='https://www.facebook.com/Veltio-Academy-1448663831864423/'><img src="{% static 'images/socials/facebook.png' %}" alt="facebook_social"></a>
+      <a href='https://www.instagram.com/veltioacademy/'><img src="{% static 'images/socials/instagram.png' %}" alt="instagram_social"></a>
+      <a href='https://www.youtube.com/channel/UCcVnI2uNHhmIBLXkiw9Rs9Q'><img src="{% static 'images/socials/youtube.png' %}" alt="youtube_social"></a>
+      <a href=''><img src="{% static 'images/socials/twitter.png' %}" alt="twitter_social"></a>
+    </div>
+    <p>&copy; 2017 Veltio Academy</p>
+  </div>
+</section>

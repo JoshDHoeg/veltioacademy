@@ -7,7 +7,8 @@ from django.contrib import admin
 
 
 urlpatterns = [
-    url(r"^$", TemplateView.as_view(template_name="homepage.html"), name="home"),
+    url(r"^$", TemplateView.as_view(template_name="login.html"), name="login"),
+    url(r"^home/", TemplateView.as_view(template_name="homepage.html"), name="home"),
     url(r"^admin/", include(admin.site.urls)),
     url(r"^account/", include("account.urls")),
 ]

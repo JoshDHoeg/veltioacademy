@@ -1,21 +1,104 @@
+ /*---------------------------------------------------------------------------\
+|                            Default Styles                                   |
+\---------------------------------------------------------------------------*/
 *{
   padding: 0;
   margin: 0;
   font-family: 'Orbitron', sans-serif;
-  text-align: center;
+  text-align: center !important;
 }
 div{
   display: block;
   margin: auto;
 }
+#content_body{
+  padding-top: 60px;
+  background: #000000;
+  color: #ffffff;
+}
+#content_body legend{
+  color: #ffffff;
+}
+#content_body button{
+  background: #2D009A;
+  border-color: #2D009A;
+}
+#content_body a{
+  color: #2D009A;
+}
+::-webkit-scrollbar{
+  height: 8px;
+  width: 8px;
+  margin: 1;
+}
+::-webkit-scrollbar-track{
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb{
+  background: #2D009A;
+}
 
-::-webkit-scrollbar{height: 10px;width: 12px;margin: 1; }
-::-webkit-scrollbar-track{background: #ffffff; }
-::-webkit-scrollbar-thumb{background: #2D009A;}
+
+ /*---------------------------------------------------------------------------\
+|                      Header and Navbar Style                                |
+\---------------------------------------------------------------------------*/
+.navbar{
+  height: 60px;
+  border-bottom: 3px solid #2D009A !important;
+  color: #2D009A;
+}
+.navbar .container-fluid{
+  height: 60px;
+}
+.navbar a{
+  color: #2D009A !important;
+  font-size: 22px;
+  height: 60px;
+}
+.navbar li{
+  margin: 0;
+}
+.in{
+  background: rgba(45, 0, 154, 0.9);
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+}
+.in a{
+  color: #ffffff !important;
+  padding: 20px !important;
+}
+.in ul{
+  width: 100%;
+  margin: auto;
+  float: none !important;
+}
+.in li{
+  border-bottom: 1px outset #ffffff;
+}
 
 
+footer{
+  background: #2D009A;
+  color: #ffffff;
+}
+footer img{
+  width: 40px;
+  height: 40px;
+}
+.footer{
+  padding: 40px 0 20px 0;
+}
+.footer a{
+    padding: 20px;
+}
+.footer .socials{
+  padding-bottom: 20px;
+}
 
 
+ /*---------------------------------------------------------------------------\
+|                      Intro Login or Signup Page                             |
+\---------------------------------------------------------------------------*/
 .email-grab{
   height: 100%;
   width: 100%;
@@ -37,7 +120,7 @@ div{
   font-size: 28px;
 }
 .email-grab #intro-logo-wrapper{
-  padding: 40px 0 50px 0;
+  padding: 40px 0 60px 0;
 }
 .email-grab #intro-logo-wrapper #intro-logo{
   width: 800px;
@@ -50,15 +133,41 @@ div{
   cursor: pointer;
   border: 3px solid #ffffff;
   border-radius: 10px;
-  max-width: 250px;
-  margin: auto;
-  padding: 6px;
+  max-width: 500px;
+  display: inline;
+  padding: 12px;
+  margin: 10px;
   text-align: center;
   font-family: 'Audiowide', cursive;
 }
-.email-grab .intro-button:active{
+.email-grab .intro-button a{
+  color: #ffffff;
+}
+.email-grab .intro-button:hover{
+  background: #ffffff;
+}
+.email-grab .intro-button:hover a{
+  color: #000000;
+  font-weight: bold;
+}
+
+
+ /*---------------------------------------------------------------------------\
+|                                  Login Page                                 |
+\---------------------------------------------------------------------------*/
+#login_page, #logout_page, #email_confirm_page, #password_reset_page, #settings_page{
+  padding: 100px 0 100px 0;
+}
+
+
+#logout_page{
 
 }
+
+
+
+
+
 .loaded{
   display: none;
 }
@@ -120,14 +229,6 @@ div{
   transition: 1s;
 }
 
-
-.navbar .container-fluid{
-  border-bottom: 5px solid #2D009A;
-  border-radius: none;
-}
-.navbar{
-  margin: 0 !important;
-}
 
  /*------------------------------------------------------------\
 |                   Default Styles                             |
