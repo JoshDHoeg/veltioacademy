@@ -12,18 +12,33 @@
 
     <link target="_blank" href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
 
   <body>
+    <section class="loader" id="loader_wrapper">
+      <div id="loader">
+        <img src="{% static 'images/loader.png' %}" alt="loader_image" id="loader_image">
+      </div>
+    </section>
+
+    <script>
+        $('#loader_wrapper').delay(1500).fadeOut('slow',function(){$(this).remove();});
+    </script>
+
     <div class="email-grab" id="email-grab">
       <div class="intro-wrapper">
         <div class="intro">
-          <div class="bounceInLeft animated  intro-header-wrapper"><h1 id="welcome">Welcome to the</h1></div>
-          <div class="bounceInRight animated" id="intro-logo-wrapper"><img src="{% static 'images/WhiteTextBlueIconLogo.png' %}" id="intro-logo" alt="veltioacademylogo"></div>
+          <div class="intro-header-wrapper"><h1 id="welcome">Welcome to the</h1></div>
+          <div class="logo" id="intro-logo-wrapper"><img src="{% static 'images/WhiteTextBlueIconLogo.png' %}" id="intro-logo" alt="veltioacademylogo"></div>
           <div class="intro-button"><a href="{% url 'account_login' %}">Log In</a></div>
           <div class="intro-button"><a href="{% url 'account_signup' %}">Sign Up</a></div>
         </div>
       </div>
     </div>
   </body>
+
+  <script src="{% static "pinax/js/theme.js" %}"></script>
+  <script src="{% static "js/bootstrap.js" %}"></script>
 </html>

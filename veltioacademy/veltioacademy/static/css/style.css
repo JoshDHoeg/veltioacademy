@@ -46,6 +46,7 @@ div{
   height: 60px;
   border-bottom: 3px solid #2D009A !important;
   color: #2D009A;
+  z-index: 5;
 }
 .navbar .container-fluid{
   height: 60px;
@@ -153,16 +154,61 @@ footer img{
 
 
  /*---------------------------------------------------------------------------\
-|                                  Login Page                                 |
+|                      Pinax Theme Page Styling                               |
 \---------------------------------------------------------------------------*/
-#login_page, #logout_page, #email_confirm_page, #password_reset_page, #settings_page{
+#login_page, #logout_page, #email_confirm_page, #password_reset_page, .settings_page_content{
   padding: 100px 0 100px 0;
 }
+.settings_page_content{
+  display: block;
+  margin: auto;
+  max-width: 80%;
+}
+#account_settings{
+  margin: 20px;
+}
 
 
-#logout_page{
+
+
+.loader{
+  background: #000000;
+  position: fixed;
+  z-index: 1050;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+#loader{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+#loader_image{
+  width: 70%;
+}
+
+@media only screen and (min-width: 768px){
+  #loader_image{
+    width: 30%;
+  }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
