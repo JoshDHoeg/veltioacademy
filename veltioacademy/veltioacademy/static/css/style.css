@@ -46,7 +46,6 @@ div{
   height: 60px;
   border-bottom: 3px solid #2D009A !important;
   color: #2D009A;
-  z-index: 5;
 }
 .navbar .container-fluid{
   height: 60px;
@@ -79,7 +78,7 @@ div{
 
 
 footer{
-  background: #2D009A;
+  background: #1F0D4B;
   color: #ffffff;
 }
 footer img{
@@ -154,61 +153,16 @@ footer img{
 
 
  /*---------------------------------------------------------------------------\
-|                      Pinax Theme Page Styling                               |
+|                                  Login Page                                 |
 \---------------------------------------------------------------------------*/
-#login_page, #logout_page, #email_confirm_page, #password_reset_page, .settings_page_content{
+#login_page, #logout_page, #email_confirm_page, #password_reset_page{
   padding: 100px 0 100px 0;
 }
-.settings_page_content{
-  display: block;
-  margin: auto;
-  max-width: 80%;
-}
-#account_settings{
-  margin: 20px;
-}
 
 
-
-
-.loader{
-  background: #000000;
-  position: fixed;
-  z-index: 1050;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  display: table;
-}
-#loader{
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-#loader_image{
-  width: 70%;
-}
-
-@media only screen and (min-width: 768px){
-  #loader_image{
-    width: 30%;
-  }
+#logout_page{
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -229,16 +183,7 @@ footer img{
 	perspective: 1000000000000000000px;
 }
 
-/*.flip-container:active .flipper, .flip-container.active .flipper {
-	transform: rotateY(180deg);
-  transition: 1s;
-}*/
-/*.flip-container:active .intro-button{
-  border-color: #2D009A;
-  background: #ffffff;
-  color: #2D009A;
-  transition: 1s;
-}*/
+
 .flip-container, .front, .back {
 	width: 320px;
 	height: 54px;
@@ -298,63 +243,4 @@ footer img{
   transform: rotate(90deg);
   display: block;
   margin: auto;
-}
-
-
- /*------------------------------------------------------------\
-|                    Vision Styles                             |
-\------------------------------------------------------------*/
-.vision .video{
-  display: block;
-  margin: auto;
-}
-.vision .content{
-
-}
-
- /*------------------------------------------------------------\
-|                   Courses Styles                             |
-\------------------------------------------------------------*/
-.courses h2{
-  font-size: 36px;
-}
-.courses ul{
-  list-style-type: none;
-  font-size: 20px;
-}
-.courses .icon{
-  padding: 20px;
-}
-
- /*------------------------------------------------------------\
-|                     Tools Styles                             |
-\------------------------------------------------------------*/
-.tools{
-
-}
-.tools .icon img{
-  width: 100px;
-}
-
-
- /*------------------------------------------------------------\
-|                     About Styles                             |
-\------------------------------------------------------------*/
-.about{
-}
-.about img{
-  border-radius:100px;
-  width: 200px;
-}
-
- /*------------------------------------------------------------\
-|                    Colors Styles                             |
-\------------------------------------------------------------*/
-.bg-blue{
-  background: #2D009A;
-  color: #ffffff !important;
-}
-.bg-white{
-  background: #F2F2F2;
-  color: #2D009A;
 }

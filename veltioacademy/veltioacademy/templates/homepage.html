@@ -9,52 +9,99 @@
 
 {% block body_base %}
 
-    <section class="vision bg-white" id="vision">
-      <div class="container" id="vision-wrapper">
-        <div class="title"><h1>The Vision</h1></div>
-        <div class="content container"><iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/CiQ874ZuIno" frameborder="0" allowfullscreen></iframe></div>
-        <div class="next"><img src="{% static 'images/ArrowBlue.png' %}" width="64px;"></div>
-      </div>
-    </section>
+<link rel="stylesheet" type="text/css" href="{% static 'css/landing.css ' %}">
 
-    <section class="courses bg-blue" id="courses">
-      <div class="container" id="courses-wrapper">
-        <div class="title"><h1>The Courses</h1></div>
-        <div class="content container">
-          <div class="col-sm-6 content-a">
-            <!--Basic Web Developement-->
-            <h2>Code</h2>
-            <div class="icon"><img src="{% static 'images/code.png' %}" width="100px;"></div>
-            <div class="text">
-              <ul>
-                <li>Web Developement</li>
-                <li>Javascript</li>
-                <li>SEO</li>
-              </ul>
-            </div>
+  <section id="intro_wrapper" style="background: url('{% static 'images/bg/intro1.png' %}')">
+    <div class="container content_wrapper">
+      <div class="content" id="intro_content">
+        <h1>Craft Your Future</h1>
+        <div class="btn">
+          <a class="btn-link" href="/">START</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="vision_wrapper">
+    <div class="container content_wrapper">
+      <div class="header" id="vision_header">
+        <h1> The Vision </h1>
+        <div class="divider"></div>
+      </div>
+      <div class="content" id="vision_content">
+        <div class="col-lg-6" id="vision_video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/3Dnn7NFQPbQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-6" id="vision_text">
+          <h2>Sculpt the leaders of tomorrow</h2>
+          <div class="divider" id="sub-divider"></div>
+          <p>Veltio Academy is a premium tutoring service that teaches the skills necessary to change the future.<p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="courses_wrapper" style="background: url('{% static 'images/bg/courses.png' %}')">
+    <div class="container content_wrapper">
+      <div class="header right" id="courses_header">
+        <h1>The Courses</h1>
+        <div class="divider"></div>
+      </div>
+      <div class="content" id="courses_content">
+        <div class="courses_card active" id="courses_1">
+          <div class="courses_card_header">
+            <img class="right" src="{% static 'images/socials/instagram.png' %}" alt="instagram_social">
+            <img class="left" src="{% static 'images/socials/instagram.png' %}" alt="instagram_social">
+            <h3>Mathematics</h3>
           </div>
-          <div class="col-sm-6 content-b">
-            <!--Math and Science-->
-            <h2>Math</h2>
-            <div class="icon"><img src="{% static 'images/math.png' %}" width="100px;"></div>
-            <div class="text">
-              <ul>
-                <li>Calculus</li>
-                <li>Algebra</li>
-                <li>Geometry</li>
-              </ul>
-            </div>
+          <div class="courses_card_content">
+            <p>Learn anyting from Algebra and Geometry to Calculus or Algorithms. Essential skills for Engineering or Computer Science.</p>
           </div>
         </div>
-        <div class="next"><img src="{% static 'images/ArrowWhite.png' %}" width="64px;"></div>
+        <div class="courses_card" id="courses_2">
+          <div class="courses_card_header">
+            <img class="right" src="{% static 'images/socials/instagram.png' %}" alt="instagram_social">
+            <img class="left" src="{% static 'images/socials/instagram.png' %}" alt="instagram_social">
+            <h3>Marketing</h3>
+          </div>
+          <div class="courses_card_content">
+            <p>Learn to use Instagram and Facebook marketing techniques. Or learn the basics to Search Engine Optimization and Ad Words.</p>
+          </div>
+        </div>
+        <div class="courses_card" id="courses_3">
+          <div class="courses_card_header">
+            <img class="right" src="{% static 'images/socials/instagram.png' %}" alt="instagram_social">
+            <img class="left" src="{% static 'images/socials/instagram.png' %}" alt="instagram_social">
+            <h3>Code</h3>
+          </div>
+          <div class="courses_card_content">
+            <p>Learn to code in HTML and CSS and design websites like this. Or begin creating Web Apps with Python or Java.</p>
+          </div>
+        </div>
       </div>
-    </section>
+      <div class="courses_links">
+        <img class="courses_link active_link" id="courses_1_link" src="{% static 'images/icons/math.png' %}" alt="instagram_social" onclick="activate('1')">
+        <img class="courses_link" id="courses_2_link" src="{% static 'images/icons/marketing.png' %}" alt="instagram_social" onclick="activate('2')">
+        <img class="courses_link" id="courses_3_link" src="{% static 'images/icons/code.png' %}" alt="instagram_social" onclick="activate('3')">
+      </div>
+    </div>
+  </section>
 
-    <section class="tools bg-white" id="tools">
-      <div class="container" id="tools-wrapper">
-        <div class="title"><h1>The Tools</h1></div>
-        <div class="content container">
-          <div class="col-sm-4 content-1">
+  <script>
+
+  </script>
+
+  <section id="tools_wrapper" style="background: url('{% static 'images/bg/tools.png' %}')">
+    <div class="container content_wrapper">
+      <div class="header" id="tools_header">
+        <h1>The Tools</h1>
+        <div class="divider"></div>
+      </div>
+      <div class="content" id="tools_content">
+        <div class="col-sm-4">
+          <div class="tools_card">
             <div class="icon">
               <a href="https://hangouts.google.com/" ><img src="{% static 'images/Hangouts.png' %}"></a>
             </div>
@@ -63,7 +110,9 @@
               <p>Consultations, and Sessions in an interactive easy to use software</p>
             </div>
           </div>
-          <div class="col-sm-4 content-2">
+        </div>
+        <div class="col-sm-4">
+          <div class="tools_card">
             <div class="icon">
               <a href="https://www.google.com/drive/"><img src="{% static 'images/Drive.png' %}"></a>
             </div>
@@ -72,7 +121,9 @@
               <p>Easily share work and discuss solutions with Google Drive</p>
             </div>
           </div>
-          <div class="col-sm-4 content-3">
+        </div>
+        <div class="col-sm-4">
+          <div class="tools_card">
             <div class="icon">
               <a href="https://www.google.com/wallet/"><img src="{% static 'images/Wallet.png' %}"></a>
             </div>
@@ -82,24 +133,48 @@
             </div>
           </div>
         </div>
-        <div class="next"><img src="{% static 'images/ArrowBlue.png' %}" width="64px;"></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="about bg-blue" id="about">
-      <div class="container about-wrapper">
-        <div class="title"><h1>The Teacher</h1></div>
-        <div class="content container">
-          <div class="image">
-            <img src="{% static 'images/profile.jpg' %}">
-          </div>
-          <div class="text">
-            <h2>Josh Hoeg</h2>
-            <h3>Call Me</h3>
-            <h4>(505) 967 8683</h4>
-            <p>Lorem ipsum dolor sit amet, vulputate nonummy egestas ipsum auctor, massa et mauris commodo per scelerisque, at odio ac, suspendisse vestibulum. Vivamus ligula dui libero quis parturient scelerisque, in commodo nisl, sed ligula erat tempus phasellus, tellus justo commodo non. Amet rhoncus, litora imperdiet vitae etiam porttitor, mi vestibulum hendrerit vel placerat provident imperdiet, vel dolor luctus mauris, elit risus aliquam vel est pellentesque. Dolor non, porta fermentum bibendum egestas vestibulum ac lectus, porttitor dui dapibus eu quisque nulla nulla. Duis auctor sapien ac ligula vestibulum in, dictumst ac eu suscipit at tellus lobortis, sollicitudin aliquam iaculis nulla sed, mauris non. Ut dictum sollicitudin amet, proin elit urna, eros sed, ipsum wisi. Morbi litora condimentum integer eu quo, aliquam morbi arcu ac magna ligula non, suspendisse condimentum in, duis id et quam, ornare id turpis et wisi. Quisque quam integer velit.</p>
-          </div>
-        </div>
+  <style>
+
+  </style>
+
+
+  <section id="cta_wrapper" style="background: url('{% static 'images/bg/cta.png' %}')">
+    <div class="container content_wrapper">
+      <div class="header" id="cta_header">
+
       </div>
-    </section>
+      <div clas="content" id="cta_content">
+
+      </div>
+    </div>
+  </section>
+
+  <section id="bio_wrapper">
+    <div class="container content_wrapper">
+      <div class="header" id="bio_header">
+
+      </div>
+      <div clas="content" id="bio_content">
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact_wrapper" style="background: url('{% static 'images/bg/contact.png' %}')">
+    <div class="container content_wrapper">
+      <div class="header" id="contact_header">
+
+      </div>
+      <div clas="content" id="contact_content">
+
+      </div>
+    </div>
+  </section>
+
+
+
 {% endblock %}

@@ -1,0 +1,229 @@
+
+ /*------------------------------------------------------------\
+|                          Default Styles                      |
+\------------------------------------------------------------*/
+.divider{
+  height: 5px;
+  width: 256px;
+  background: #FB7905;
+}
+#sub-divider{
+  width: 420px;
+  height: 2px;
+}
+.content_wrapper h1{
+  font-size: 72px;
+  color: #ffffff;
+}
+.content_wrapper h2{
+  color: #2D009A;
+  font-size: 42px;
+}
+.content_wrapper h3{
+  font-size: 64px;
+}
+p{
+  font-size: 26px;
+}
+.right{
+  float: right;
+}
+.left{
+  float: left;
+}
+.btn-link{
+  background: #FB7905 !important;
+  color: #ffffff !important;
+  font-size: 36px;
+  padding: 10px 20px;
+  transition: 0.8s;
+}
+.btn-link:hover{
+  -moz-box-shadow: 10px 20px 10px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 10px 20px 10px rgba(0,0,0,0.5);
+  box-shadow: 10px 20px 10px rgba(0,0,0,0.5);
+  color: #ffffff !important;
+  cursor: pointer;
+  background: #FB7905 !important;
+  text-decoration: none !important;
+  transition: 0.8s;
+}
+
+
+ /*------------------------------------------------------------\
+|                    Intrp Section Styles                      |
+\------------------------------------------------------------*/
+#intro_wrapper{
+  background-repeat:no-repeat !important;
+  background-size: cover;
+  height: 860px;
+  width: 100%;
+  padding-top: 60px;
+}
+#intro_wrapper .content_wrapper{
+  max-width: 60%;
+  padding-top: 140px;
+}
+
+
+ /*------------------------------------------------------------\
+|                    Vision Styles                             |
+\------------------------------------------------------------*/
+#vision_wrapper .content_wrapper #vision_header h1{
+  color: #2D009A;
+  font-size: 72px;
+}
+#vision_text{
+  padding: 40px;
+}
+
+
+ /*------------------------------------------------------------\
+|                   Courses Styles                             |
+\------------------------------------------------------------*/
+#courses_wrapper{
+  background-repeat:no-repeat !important;
+  background-size: cover;
+  height: 1155.5px;
+  width: 100%;
+}
+#courses_wrapper .header{
+  display: block;
+  margin: auto;
+  padding-top: 128px;
+}
+#courses_wrapper .content{
+  margin-top: 256px;
+}
+#courses_wrapper .content .courses_card{
+  text-align: center;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 96px;
+  color: #fff;
+  display: none;
+}
+#courses_wrapper .content .courses_card p{
+  font-size: 36px;
+}
+#courses_wrapper .content .courses_card .courses_card_header, #courses_wrapper .content .courses_card .courses_card_content{
+  padding: 32px;
+}
+#courses_wrapper .content .courses_card .courses_card_header img{
+  width: 128px;
+}
+#courses_wrapper .active{
+  display: block !important;
+}
+#courses_wrapper .courses_link{
+  opacity: .5;
+  width: 64px;
+  margin: 20px;
+  float: left;
+  display: block;
+}
+#courses_wrapper .active_link{
+  opacity: 1;
+}
+
+ /*------------------------------------------------------------\
+|                     Tools Styles                             |
+\------------------------------------------------------------*/
+#tools_wrapper{
+  background-repeat:no-repeat !important;
+  background-size: cover;
+  height: 930px;
+  width: 100%;
+}
+#tools_wrapper .content_wrapper .header h1{
+  color: #2D009A;
+}
+#tools_wrapper .content_wrapper .content .icon img{
+  width: 200px;
+}
+#tools_wrapper .content_wrapper{
+  padding-top: 64px;
+}
+#tools_wrapper .content_wrapper .content .tools_card{
+  background: #ffffff;
+  width: 320px;
+  height: 600px;
+  display: block;
+  margin: auto;
+  padding: 32px;
+  -moz-box-shadow: 10px 20px 10px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 10px 20px 10px rgba(0,0,0,0.5);
+  box-shadow: 10px 20px 10px rgba(0,0,0,0.5);
+}
+
+
+ /*------------------------------------------------------------\
+|                     About Styles                             |
+\------------------------------------------------------------*/
+#cta_wrapper{
+  background-repeat:no-repeat !important;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+}
+
+
+ /*------------------------------------------------------------\
+|                       Bio Styles                             |
+\------------------------------------------------------------*/
+#bio_wrapper{
+  height: 700px;
+  width: 100%;
+}
+
+
+ /*------------------------------------------------------------\
+|                   Contact Styles                             |
+\------------------------------------------------------------*/
+#contact_wrapper{
+  background-repeat:no-repeat !important;
+  background-size: cover;
+  height: 1169px;
+  width: 100%;
+}
+
+
+
+
+@media only screen and (max-width: 992px) {
+  /*------------------------------------------------------------\
+ |                    Intrp Section Styles                      |
+ \------------------------------------------------------------*/
+     #intro_wrapper{
+       height: 591px;
+     }
+  /*------------------------------------------------------------\
+ |                   Courses Styles                             |
+ \------------------------------------------------------------*/
+     #courses_wrapper{
+       height: 1382px;
+     }
+  /*------------------------------------------------------------\
+ |                     Tools Styles                             |
+ \------------------------------------------------------------*/
+     #tools_wrapper{
+       height: 1112px;
+     }
+  /*------------------------------------------------------------\
+ |                     About Styles                             |
+ \------------------------------------------------------------*/
+     #cta_wrapper{
+       height: 837px;
+     }
+  /*------------------------------------------------------------\
+ |                       Bio Styles                             |
+ \------------------------------------------------------------*/
+     #bio_wrapper{
+       height: 837px;
+     }
+  /*------------------------------------------------------------\
+ |                   Contact Styles                             |
+ \------------------------------------------------------------*/
+     #contact_wrapper{
+       height: 1398px;
+     }
+  }
